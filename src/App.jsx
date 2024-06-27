@@ -20,13 +20,9 @@ function App() {
   
 
   return (
-   <div className=' bg-[#F9FAFB]'>
-    
-<RouterProvider router={router} >
-
-</RouterProvider>
-   </div>
-  )
+    <>
+ <RouterProvider router={router}/>
+ </>)
 }
 
 export default App

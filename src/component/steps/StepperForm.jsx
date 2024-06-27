@@ -27,7 +27,7 @@ const StepperForm = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-        <Navbar />
+        <Navbar prevStep={prevStep} />
       <ProgressBar progress={progress} />
       {steps[step]}
     </div>

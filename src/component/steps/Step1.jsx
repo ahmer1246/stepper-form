@@ -10,18 +10,18 @@ function Step1({ formData, setFormData, nextStep }) {
     nextStep();
   };
   return (
-    <div className='w-[480px] h-[749px] top-[137.5px] left-[480px] flex gap-12 text-center flex-col'>
-        <div className='w-[480px] h-[39px]'>
+    <div className='w-full sm:w-[480px] h-[749px] top-[137.5px] left-[480px] flex gap-12 text-center flex-col'>
+        <div className='sm:w-[480px] h-[39px]'>
            <h4 className='text-[28px] leading-[39px] font-semibold text-center text-[#051011]'>Step # 1</h4>
         </div>
-        <div className='w-[480px] h-[78px] '>
-        <p className='font-semibold text-[28px] leading-[39px] text-center text-[#051011]' >What is your monthly digital marketing budget?</p>
+        <div className='sm:w-[480px] h-[78px] '>
+        <p className='font-semibold sm:text-[28px] leading-[39px] text-center text-[#051011]' >What is your monthly digital marketing budget?</p>
         </div>
         
-        <div className='w-[480px] h-[536px] flex flex-col gap-4'>
+        <div className='sm:w-[480px] sm:h-[536px] flex flex-col gap-4'>
           {
             budgets.map((budget,index)=>( 
-               <button key={index} onClick={() => handleNext(budget)} className='w-[480px] h-[76px] rounded-lg p-6 border border-solid border-[#E5E7EB]'>{budget}</button>
+               <button key={index} onClick={() => handleNext(budget)} className='w-full sm:w-[480px] h-[76px] rounded-lg sm:p-6 border border-solid border-[#E5E7EB]'>{budget}</button>
             ))
           }
         </div>
